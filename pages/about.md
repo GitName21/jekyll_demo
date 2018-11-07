@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
+description: 看尽世间一切
 keywords: Zhuang Ma, 马壮
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是 Bruce Lin，总想走到高出，看水往下流。
 
-仰慕「优雅编码的艺术」。
+仰慕「优雅无比的艺术」。
 
 坚信熟能生巧，努力改变人生。
 
