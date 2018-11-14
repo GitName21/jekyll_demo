@@ -307,7 +307,7 @@ mysql> SELECT *
 
 以上七种用法基本上可以覆盖各种 JOIN 查询了。七种用法的全家福：
 
-![SQL JOINS](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/database/sql-joins.png)
+![SQL JOINS](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/images/posts/database/sql-joins.png)
 
 看着它们，我仿佛回到了当年学数学，求交集并集的时代……
 
