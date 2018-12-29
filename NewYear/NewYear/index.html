@@ -1,327 +1,33 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Bruce Lin 祝福</title>
-<script src="js/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-<link rel="stylesheet" type="text/css" href="css/zzsc.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<style style="text/css">
-	body{background:url("img/1_1.jpg");/*background-size:cover;*/}
-	/*start top*/
-	/*end top*/
-	/*start box*/
-	.box{width:310px;/*height:310px;*/margin:auto;perspective:800px;/*景深*/}
-	.box .pic{position:relative;transform-style:preserve-3d;/*3d环境*/ animation:play 10s linear infinite;/*动画名称 执行时间 匀速 无限执行*/}
-	.box ul li{list-style:none;position:absolute;top:0;left:0;}
-	/*start box*/
-	/*定义一个关键帧*/
-	@keyframes play{from{transform:rotateY(0deg);}to{transform:rotateY(360deg);}}
-	/*start text*/
-	#text{width:500px;height:200px;color:#6fade1;margin:auto;font-size:24px;font-family:"方正喵呜体";}
-	/*end text*/
-	
-	
-/*星星*/
-#starsBox {position: fixed;top: 0;left: 0;right: 0;bottom: 0;}
-#starsBox span {display: inline-block;width: auto;position: absolute;border-radius: 100%;transition: 100s linear;}
-p > span {display: block;font-size: 12px;color: #bdc3c7;margin-top: 30px;font-weight: 100;text-shadow: 0 0 50px black;letter-spacing: 3px;}
-p > span > a {font-weight: 700;text-decoration: none;color: #d64541;padding-bottom: 2px;border-bottom: 0px solid #d64541;transition: 0.5s;}
-p > span > a:hover {padding-bottom: 5px;border-bottom: 2px solid #d64541;}
-.soda {position: fixed;z-index: 9;top: 0;right: 0;bottom: 0;left: 0;perspective: 50vw;transform: translateZ(-99999px);transform-style: preserve-3d;}
-.bubble {position: absolute;width: 50px;height: 50px;border-radius: 50%;background-image: radial-gradient(rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 1) 80%);transform: translateX(-50%);will-change: top, left;}
-.bubble::after {content: '';position: absolute;top: 20%;right: 25%;width: 33%;height: 33%;border: 3px solid;border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;border-radius: 50%;transform: rotate(45deg);}	
-	
-
-/*跳动文字*/
-.fa-codepen{-webkit-animation: fade 3s infinite alternate;-moz-animation: fade 3s infinite alternate;-o-animation: fade 3s infinite alternate;animation: fade 3s infinite alternate;}
-span {font-size: 1em;font-family: "Quicksand", sans-serif;color: white;transition: .25s;}
-#span{display: block;width: 400px;margin-left: 30px;line-height: 25px;}
-/*Animation*/
-@-moz-keyframes fade {
-  40% {
-    opacity: 0.8;
-  }
-  42% {
-    opacity: 0.1;
-  }
-  43% {
-    opacity: 0.8;
-  }
-  45% {
-    opacity: 0.1;
-  }
-  46% {
-    opacity: 0.8;
-  }
-}
-@-webkit-keyframes fade {
-  40% {
-    opacity: 0.8;
-  }
-  42% {
-    opacity: 0.1;
-  }
-  43% {
-    opacity: 0.8;
-  }
-  45% {
-    opacity: 0.1;
-  }
-  46% {
-    opacity: 0.8;
-  }
-}
-@-o-keyframes fade {
-  40% {
-    opacity: 0.8;
-  }
-  42% {
-    opacity: 0.1;
-  }
-  43% {
-    opacity: 0.8;
-  }
-  45% {
-    opacity: 0.1;
-  }
-  46% {
-    opacity: 0.8;
-  }
-}
-@keyframes fade {
-  40% {
-    opacity: 0.8;
-  }
-  42% {
-    opacity: 0.1;
-  }
-  43% {
-    opacity: 0.8;
-  }
-  45% {
-    opacity: 0.1;
-  }
-  46% {
-    opacity: 0.8;
-  }
-}
-
-/*银行卡*/
-
-
-.boxbut{ 
-width: 550px; 
-text-align: center;
-line-height: 46px; 
-margin:0 auto; 
-position: relative;
-z-index: 9999;
-}
-.btn{ 
-position: relative;
-font-weight:bold;
-width: 124px; 
-height: 44px; 
-border-radius: 3px; 
-border: 1px solid #c0c0c0; 
-margin:0 50px 40px 0; 
- 
-}
-.btn:nth-child(3n){
-margin-right: 0;
-}
-.btn:nth-child(3){
-color: #923e3e; 
-border-color: #b74545; 
-box-shadow:inset 0 1px 0 #fe8585,0 1px 0 rgba(0,0,0,.2);
-background:-webkit-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-moz-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-ms-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-o-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:linear-gradient(top,#fd5c5c,#fd4a4a); 
-}
-.btn:nth-child(3):hover{
-background:-webkit-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-moz-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-o-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-ms-linear-gradient(top,#fd8d8d,#ff6161); 
-background:linear-gradient(top,#fd8d8d,#ff6161); 
-}
-.btn:nth-child(3):active{
-top:4px;
-box-shadow:inset 0 1px 3px #a31818;
-background:-webkit-linear-gradient(top,#d43535,#d43535); 
-background:-moz-linear-gradient(top,#d43535,#d43535); 
-background:-ms-linear-gradient(top,#d43535,#d43535); 
-background:-o-linear-gradient(top,#d43535,#d43535); 
-background:linear-gradient(top,#d43535,#d43535); 
-}
-.btn:nth-child(1){
-color: #923e3e; 
-border-color: #b74545; 
-box-shadow:inset 0 1px 0 #fe8585,0 1px 0 rgba(0,0,0,.2);
-background:-webkit-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-moz-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-ms-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:-o-linear-gradient(top,#fd5c5c,#fd4a4a); 
-background:linear-gradient(top,#fd5c5c,#fd4a4a); 
-}
-.btn:nth-child(1):hover{
-background:-webkit-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-moz-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-o-linear-gradient(top,#fd8d8d,#ff6161); 
-background:-ms-linear-gradient(top,#fd8d8d,#ff6161); 
-background:linear-gradient(top,#fd8d8d,#ff6161); 
-}
-.btn:nth-child(1):active{
-top:4px;
-box-shadow:inset 0 1px 3px #a31818;
-background:-webkit-linear-gradient(top,#d43535,#d43535); 
-background:-moz-linear-gradient(top,#d43535,#d43535); 
-background:-ms-linear-gradient(top,#d43535,#d43535); 
-background:-o-linear-gradient(top,#d43535,#d43535); 
-background:linear-gradient(top,#d43535,#d43535); 
-}
-.btn:nth-child(2){ 
-color: #3295a4; 
-border-color: white; 
-box-shadow:inset 0 1px 0 white,0 1px 0 rgba(0,0,0,.2);
-background:-webkit-linear-gradient(top,white,white); 
-background:-moz-linear-gradient(top,white,white); 
-background:-o-linear-gradient(top,white,white); 
-background:-ms-linear-gradient(top,white,white); 
-background:linear-gradient(top,white,white); 
-}
-.btn:nth-child(2):active{
-top:4px;
-box-shadow:inset 0 1px 3px #1d8194;
-background:-webkit-linear-gradient(top,#2bbed9,#2bbed9); 
-background:-moz-linear-gradient(top,#2bbed9,#2bbed9); 
-background:-o-linear-gradient(top,#2bbed9,#2bbed9); 
-background:-ms-linear-gradient(top,#2bbed9,#2bbed9); 
-background:linear-gradient(top,#2bbed9,#2bbed9); 
-}
-.btn:before,
-.btn:after{
-position: absolute;
-content: "";
-height: 50%;
-border-radius: 50%;
-z-index: -1;
-}
-.btn:before {
-width: 90%;
-left: 5%;
-top:12%;
-box-shadow: 0 -7px 4px rgba(0,0,0,0.3);
-}
-.btn:active:before {
-width: 90%;
-left: 5%;
-top:12%;
-box-shadow: 0 0 2px rgba(0,0,0,0.3);
-}
-.btn:after {
-width: 80%;
-left: 10%;
-bottom: 9%;
-box-shadow: 0 7px 4px rgba(0,0,0,0.4);
-}
-.btn:active:after {
-width: 80%;
-left: 10%;
-bottom: 9%;
-box-shadow: 0 0 0 rgba(0,0,0,0.4);
-}
-.boxbut p:last-child{ 
-font-size: 20px; 
-font-weight: bold;
-}
-.boxbut p:last-child span{ 
-color: #fff;
-}
-
-</style>
-<script>
-	$(document).ready(function(){
-//		var phone = $(window).width(); 
-//		if(phone<=860){
-//			alert("小猪请用电脑观看！！！");
-//			window.location.replace("phone.html");
-//		}else{
-//			alert("祝师姐节日快乐！！！");
-//		};
-
-$(function(){
-    var u = navigator.userAgent;
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    
-    
-   if(isAndroid==true || isiOS==true){
-		window.location.replace("phone.html");
-   }else{
-   		alert("祝师姐节日快乐！！！");
-   }
-    
-//  if(ua.match(/MicroMessenger/i)=="micromessenger") {   //微信内置浏览器+应用宝链接
-//      $(".download a").bind('touchstart', function (event) {
-//          window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名 '
-//      });
-//  }else{
-//      if(isiOS){
-//          $(".download a").bind('touchstart', function (event) {
-//              window.location.href='https://itunes.apple.com/cn/app/应用名'
-//               
-//          });
-//      }else if(isAndroid){
-//          $(".download a").bind('touchstart', function (event) {
-//              window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名'
-//               
-//          });
-//      }else{  //PC 端
-//          $(".download a").click(function(){
-//          	alert("");
-//              window.location.href='应用链接'
-//          });
-//      }
-//   
-//  }
-     
-});
-	});
-</script>
+	<meta charset="utf-8">
+	<title>Bruce Lin 祝福</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(function(){
+			    var u = navigator.userAgent;
+			    var ua = navigator.userAgent.toLowerCase();
+			    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+			    if(isAndroid==true || isiOS==true){
+					window.location.replace("phone.html");
+			    }else{
+			   		alert("祝师姐节日快乐！！！");
+			    };
+			     
+			});
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <!--星星-->
 <div id="starsBox"></div>
-<script type="text/javascript">
-var cols = ['#f5d76e','#f7ca18','#f4d03f','#ececec','#ecf0f1','#a2ded0'];
-var stars = 250;
-
-for (var i = 0; i <= stars; i++) {
-
-	var size = Math.random()*3;
-  var color = cols[parseInt(Math.random()*4)];
-
-	$('#starsBox').prepend('<span style=" width: ' + size + 'px; height: ' + size + 'px; top: ' + Math.random()*100 + '%; left: ' + Math.random()*100 + '%; background: ' + color + '; box-shadow: 0 0 '+ Math.random()*10 +'px' + color + ';"></span>') ;
-};
-
-setTimeout(function(){ 
-	$('#starsBox span').each(function(){  
- 		$(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%'); 
-  });
-}, 1);
-
-setInterval(function(){ 
-	$('#starsBox span').each(function(){  	
- 		$(this).css('top', Math.random()*100 + '%').css('left', Math.random()*100 + '%'); 
-  });
-}, 100000);
-</script>
+<script type="text/javascript" src="js/speck.js" ></script>
 
 <!--旋转的图片-->
 <div class="box">
@@ -341,190 +47,82 @@ setInterval(function(){
 <!--start text-->
 <!--<div id="text"></div>-->
 <!--end text-->
-<embed src="music.mp3" hidden="true">
 
 <!--雪花-->
 <script src="js/snow.js"></script>
-<script>
-	$(".pic ul li").each(function(i){//遍历
-		var deg=360/$(".pic ul li").size();//size个数
-		//当前的li对象 添加css样式
-		$(this).css({"transform":"rotateY("+deg*i+"deg) translateZ(216px)"});
-		
-		$.fn.snow({
-			minSize:10,
-			maxSize:15,
-			newOn:500,
-			flakeColor:"#ffffff"
-		});
-	});
-	
-	var i=0;
-//	var str="元旦节快乐";
-	
-	window.onload=function typing(){
-		//获取div
-		var mydiv=document.getElementById("text");
-		mydiv.innerHTML+=str.charAt(i);
-		i++;
-		var id=setTimeout(typing,100);
-		if(i==str.length){
-			clearTimeout(id);
-		}
-	}
-</script>
+<script type="text/javascript" src="js/snow_1.js" ></script>
 
 <!--卷轴-->
-<div class="content">
-	<div id="container"></div>		
-	<div class="l-pic-index"></div>
-	<div class="r-pic-index"></div>
-	<div class="l-bg-index"></div>
-	<div class="r-bg-index"></div>
-	<div class="main-index">
+	<div class="content">
+		<div id="container"></div>		
+		<div class="l-pic-index"></div>
+		<div class="r-pic-index"></div>
+		<div class="l-bg-index"></div>
+		<div class="r-bg-index"></div>
+		<div class="main-index">
 				
-		<p class="intro-text">
-			早晨笑一笑，生活有情调，平时笑一笑，欢喜又热闹，烦恼笑一笑，一切全忘掉，快乐笑一笑，日子多美妙。看到祝福笑一笑，幸福从此身边绕！
-		</p>
+			<p class="intro-text">
+				早晨笑一笑，生活有情调，平时笑一笑，欢喜又热闹，烦恼笑一笑，一切全忘掉，快乐笑一笑，日子多美妙。看到祝福笑一笑，幸福从此身边绕！
+			</p>
 		
-<!--文字新效果-->
-<script src="js/typed.min.js"></script>
-<div id="typedStrings">
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;祝师姐元旦快乐，百事可乐！万事芬达！天天哇哈哈！月月乐百事！年年高乐高！心情似雪碧！永远都醒目！<br /><br />--------------------------------&nbsp;&nbsp;Bruce Lin&nbsp;&nbsp;寄语师姐</p>
-</div>
-<span id="span"></span>
-<script type="text/javascript">
-$("#span").typed({
-  stringsElement: $("#typedStrings"),
-  typeSpeed: 100,
-  showCursor: false,
-  contentType: "html"
-});
-</script>
-	</div>
-</div>
-<script type="text/javascript">
-	 $(document).ready(function(){
-			//卷轴展开动画效果
-			$(".l-pic-index").animate({'left':'0','top':'-4px'},8300);
-			$(".r-pic-index").animate({'right':'-0','top':'-5px'},8450);
-			$(".l-bg-index").animate({'width':'470px','left':'-23px'},9500);
-			$(".r-bg-index").animate({'width':'470px','right':'-15px'},9300,function(){
-				$(".main-index").fadeIn(800);
+	<!--文字新效果-->
+			<script src="js/typed.min.js"></script>
+			<div id="typedStrings">
+			  <p>&nbsp;&nbsp;&nbsp;&nbsp;祝师姐元旦快乐，百事可乐！万事芬达！天天哇哈哈！月月乐百事！年年高乐高！心情似雪碧！永远都醒目！<br /><br />--------------------------------&nbsp;&nbsp;Bruce Lin&nbsp;&nbsp;寄语师姐</p>
+			</div>
+			<span id="span"></span>
+			<script type="text/javascript">
+			$("#span").typed({
+			  stringsElement: $("#typedStrings"),
+			  typeSpeed: 100,
+			  showCursor: false,
+			  contentType: "html"
 			});
-		});
-</script>
-
-<!--泡泡-->
-<div class='soda'></div>
-<script>
-const floatOn = options => {
-	let el = options.el,
-		x = options.x,
-		xIsPos = options.xIsPos || Math.floor(Math.random()),
-		updateX = options.updateX || Math.floor(Math.random()),
-		curTop = parseInt(el.style.top),
-		curLeft = parseInt(el.style.left);
-
-	if (curTop > -50) {
-		el.style.top = `${--curTop}px`;
-	} else {
-		el.style.top = `${innerHeight + 50}px`;
-	}
-
-	if (updateX) {
-		if (xIsPos) {
-			if (curLeft > x + 10) {
-				xIsPos = false;
-			} else {
-				el.style.left = `${curLeft + 1}px`;
-			}
-		} else {
-			if (curLeft < x - 10) {
-				xIsPos = true;
-			} else {
-				el.style.left = `${--curLeft}px`;
-			}
-		}
-	}
-
-	updateX = updateX ? false : true;
-
-	requestAnimationFrame(
-		floatOn.bind(null, { el: el, x: x, xIsPos: xIsPos, updateX: updateX })
-	);
-};
-
-class Bubble {
-	constructor(target, i) {
-		this.bubble = document.createElement("div");
-		this.bubble.classList.add("bubble");
-		this.x = Math.floor(Math.random() * innerWidth);
-		this.y = Math.floor(Math.random() * innerHeight);
-		this.scale = Math.random();
-		this.pos = Math.round(Math.random());
-
-		this.bubble.style.top = `${this.y}px`;
-		this.bubble.style.left = `${this.x}px`;
-		this.bubble.style.transform = `translateZ(${
-			this.pos ? "" : "-"
-		}${this.scale.toFixed(2) * 1000}px)`;
-
-		setTimeout(() => {
-			target.appendChild(this.bubble);
-		}, i * 10);
-		setTimeout(floatOn.bind(null, { el: this.bubble, x: this.x }), i * 10);
-	}
-}
-
-for (let i = 0; i < 8; i++) {
-	new Bubble(document.querySelector(".soda"), i);
-}
-</script>
-<!--泡泡效果-->
-
-<!--背景音乐-->
-<div class="music">
-	<audio controls="controls" autoplay="autoplay" loop="loop">
-	  <source src="song/music.mp3" type="audio/ogg" />
-	  <source src="song/music.mp3" type="audio/mpeg" />
-	</audio>	
-</div>
-
-
-<div class="boxbut">
-	<div class="form-actions">
-		<button type="button" class="btn">元旦快乐</button>
-		<button type="button" class="btn bth_pig">Click Me</button>
-		<button type="button" class="btn">新年快乐</button>
+			</script>
+		</div>
 	</div>
-</div>
-<script>
-$(document).ready(function(){
-  $(".bth_pig").click(function(){
-  	$(".boxbut").slideUp(1000);
-    $(".pig").slideToggle(1000);
-  });
-});
-</script>
+	<!--<script type="text/javascript" src="js/snow_1.js" ></script>-->
 
-
-<!--猪-->
-<div class="pig">
-	<div><img src="img/pig.png" /><div class="bless">学习进步</div></div>
-	<div><img src="img/pig_2.png" /><div class="bless">吃香喝辣</div></div>
-	<div><img src="img/pig_3.png" /><div class="bless">平平安安</div></div>
-	<div><img src="img/pig_4.png" /><div class="bless">自由自在</div></div>
-	<div><img src="img/pig_5.png" /><div class="bless">开开心心</div></div>
-	<div><img src="img/pig_6.png" /><div class="bless">无忧无虑</div></div>
-	<div><img src="img/pig_7.png" /><div class="bless">漂漂亮亮</div></div>
-	<div><img src="img/pig_8.png" /><div class="bless">美妙守护</div></div>
-	<div><img src="img/pig_9.png" /><div class="bless">健健康康</div></div>
-	<div><img src="img/pig_10.png" /><div class="bless">幸运之神</div></div>
-	<div style="clear: both;"></div>
-</div>
-
-
-
+	<!--泡泡-->
+	<div class='soda'></div>
+	<script type="text/javascript" src="js/bubble.js" ></script>
+	
+	<!--背景音乐-->
+	<div class="music">
+		<audio controls="controls" autoplay="autoplay" loop="loop">
+		  <source src="song/music.mp3" type="audio/ogg" />
+		  <source src="song/music.mp3" type="audio/mpeg" />
+		</audio>	
+	</div>
+	<!--按钮-->
+	<div class="boxbut">
+		<div class="form-actions">
+			<button type="button" class="btn">元旦快乐</button>
+			<button type="button" class="btn bth_pig">Click Me</button>
+			<button type="button" class="btn">新年快乐</button>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+	  $(".bth_pig").click(function(){
+	  	$(".boxbut").slideUp(1000);
+	    $(".pig").slideToggle(1000);
+	  });
+	});
+	</script>
+	<!--猪-->
+	<div class="pig">
+		<div><img src="img/pig.png" /><div class="bless">学习进步</div></div>
+		<div><img src="img/pig_2.png" /><div class="bless">吃香喝辣</div></div>
+		<div><img src="img/pig_3.png" /><div class="bless">平平安安</div></div>
+		<div><img src="img/pig_4.png" /><div class="bless">自由自在</div></div>
+		<div><img src="img/pig_5.png" /><div class="bless">开开心心</div></div>
+		<div><img src="img/pig_6.png" /><div class="bless">无忧无虑</div></div>
+		<div><img src="img/pig_7.png" /><div class="bless">漂漂亮亮</div></div>
+		<div><img src="img/pig_8.png" /><div class="bless">美妙守护</div></div>
+		<div><img src="img/pig_9.png" /><div class="bless">健健康康</div></div>
+		<div><img src="img/pig_10.png" /><div class="bless">幸运之神</div></div>
+		<div style="clear: both;"></div>
+	</div>
 </body>
 </html>

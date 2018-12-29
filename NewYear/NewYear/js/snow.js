@@ -38,13 +38,3 @@
 		options.newOn);
 	};
 })(jQuery);
-
-
-//屏幕
-$(document).ready(function() 
-{ 
- var box_height = $(window).height(); //浏览器当前窗口可视区域高度 
-// alert(box_height);
-// $(".box").height(box_height);
-} 
-)

@@ -2,60 +2,29 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Bruce Lin 祝福-手机版</title>
+		<title>Bruce Lin 祝福</title>
 		<script src="js/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/zzsc.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script>
 			$(document).ready(function(){
-//				var phone = $(window).width(); 
-//				if(phone>=860){
-//					alert("祝师姐节日快乐！！！");
-//					window.location.replace("index.html");
-//				};
 
-$(function(){
-    var u = navigator.userAgent;
-    var ua = navigator.userAgent.toLowerCase();
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    
-    
-   if(isAndroid==true || isiOS==true){
-		alert("祝师姐节日快乐！！！");
-   }else{
-   		window.location.replace("index.html");
-   }
-    
-//  if(ua.match(/MicroMessenger/i)=="micromessenger") {   //微信内置浏览器+应用宝链接
-//      $(".download a").bind('touchstart', function (event) {
-//          window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名 '
-//      });
-//  }else{
-//      if(isiOS){
-//          $(".download a").bind('touchstart', function (event) {
-//              window.location.href='https://itunes.apple.com/cn/app/应用名'
-//               
-//          });
-//      }else if(isAndroid){
-//          $(".download a").bind('touchstart', function (event) {
-//              window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名'
-//               
-//          });
-//      }else{  //PC 端
-//          $(".download a").click(function(){
-//          	alert("");
-//              window.location.href='应用链接'
-//          });
-//      }
-//   
-//  }
-     
-});
+			$(function(){
+			    var u = navigator.userAgent;
+			    var ua = navigator.userAgent.toLowerCase();
+			    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+			   if(isAndroid==true || isiOS==true){
+					alert("祝师姐节日快乐！！！");
+			   }else{
+			   		window.location.replace("index.html");
+			   };
+			     
+			});
 
 			});			
 		</script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<style>
 			*{margin: 0;padding: 0;}
 			.box_phone{width: 100%;height: auto;}
