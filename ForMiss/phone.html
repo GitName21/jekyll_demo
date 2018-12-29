@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bruce Lin 送张晓宇师姐的祝福</title>
+		<script src="js/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var myDate = new Date();
+				var year=myDate.getFullYear();
+				var month=myDate.getMonth()+1;
+				var date=myDate.getDate();
+				if(year!=2019  && month!=01 || year!=2019  && month!=1){
+					confirm("哈哈哈！！！元旦才可以看哦！！！");
+					if(confirm){
+	　　					window.close();
+					}else{
+						window.close();
+					}
+				}else{
+					$(function(){
+					    var u = navigator.userAgent;
+					    var ua = navigator.userAgent.toLowerCase();
+					    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+					    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+					   if(isAndroid==true || isiOS==true){
+							alert("祝师姐节日快乐！！！");
+					   }else{
+					   		window.location.replace("index.html");
+					   };
+					     
+					});
+				};
+			});			
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style>
+			*{margin: 0;padding: 0;}
+			.box_phone{width: 100%;height: auto;}
+		</style>
+	</head>
+	<body>
+		<div class="box_phone">
+			<img src="img/phone.jpg" width="100%" height="auto" />
+		</div>
+	</body>
+</html>

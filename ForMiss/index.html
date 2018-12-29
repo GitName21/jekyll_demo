@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bruce Lin 送张晓宇师姐的祝福</title>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var myDate = new Date();
+			var year=myDate.getFullYear();
+			var month=myDate.getMonth()+1;
+			var date=myDate.getDate();
+			if(year!=2019  && month!=01 || year!=2019  && month!=1){
+				confirm("哈哈哈！！！元旦才可以看哦！！！");
+				if(confirm){
+　　					window.close();
+				}else{
+					window.close();
+				}
+			}else{
+				$(function(){
+				    var u = navigator.userAgent;
+				    var ua = navigator.userAgent.toLowerCase();
+				    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+				    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+				    if(isAndroid==true || isiOS==true){
+						window.location.replace("phone.html");
+				    }else{
+				   		alert("祝师姐节日快乐！！！");
+				    };
+				     
+				});
+			};
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/zzsc.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!--星星-->
+<div id="starsBox"></div>
+<script type="text/javascript" src="js/speck.js" ></script>
+
+<!--旋转的图片-->
+<div class="box">
+	<div class="pic">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
+
+<!--雪花-->
+<script src="js/snow.js"></script>
+<script type="text/javascript" src="js/snow_1.js" ></script>
+
+<!--卷轴-->
+	<div class="content">
+		<div id="container"></div>		
+		<div class="l-pic-index"></div>
+		<div class="r-pic-index"></div>
+		<div class="l-bg-index"></div>
+		<div class="r-bg-index"></div>
+		<div class="main-index">
+				
+			<p class="intro-text">
+				早晨笑一笑，生活有情调，平时笑一笑，欢喜又热闹，烦恼笑一笑，一切全忘掉，快乐笑一笑，日子多美妙。看到祝福笑一笑，幸福从此身边绕！
+			</p>
+		
+	<!--文字新效果-->
+			<script src="js/typed.min.js"></script>
+			<div id="typedStrings">
+			  <p>&nbsp;&nbsp;&nbsp;&nbsp;祝师姐元旦快乐，百事可乐！万事芬达！天天哇哈哈！月月乐百事！年年高乐高！心情似雪碧！永远都醒目！<br /><br />--------------------------------&nbsp;&nbsp;Bruce Lin&nbsp;&nbsp;寄语师姐</p>
+			</div>
+			<span id="span"></span>
+			<script type="text/javascript">
+			$("#span").typed({
+			  stringsElement: $("#typedStrings"),
+			  typeSpeed: 100,
+			  showCursor: false,
+			  contentType: "html"
+			});
+			</script>
+		</div>
+	</div>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+				//卷轴展开动画效果
+				$(".l-pic-index").animate({'left':'0','top':'-4px'},8300);
+				$(".r-pic-index").animate({'right':'-0','top':'-5px'},8450);
+				$(".l-bg-index").animate({'width':'470px','left':'-23px'},9500);
+				$(".r-bg-index").animate({'width':'470px','right':'-15px'},9300,function(){
+					$(".main-index").fadeIn(800);
+				});
+			});			
+	</script>
+
+	<!--泡泡-->
+	<div class='soda'></div>
+	<script type="text/javascript" src="js/bubble.js" ></script>
+	
+	<!--背景音乐-->
+	<div class="music">
+		<audio controls="controls" autoplay="autoplay" loop="loop">
+		  <source src="song/music.mp3" type="audio/ogg" />
+		  <source src="song/music.mp3" type="audio/mpeg" />
+		</audio>	
+	</div>
+	<!--按钮-->
+	<div class="boxbut">
+		<div class="form-actions">
+			<button type="button" class="btn">元旦快乐</button>
+			<button type="button" class="btn bth_pig">Click Me</button>
+			<button type="button" class="btn">新年快乐</button>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+	  $(".bth_pig").click(function(){
+	  	$(".boxbut").slideUp(1000);
+	    $(".pig").slideToggle(1000);
+	  });
+	});
+	</script>
+	<!--猪-->
+	<div class="pig">
+		<div><img src="img/pig.png" /><div class="bless">学习进步</div></div>
+		<div><img src="img/pig_2.png" /><div class="bless">吃香喝辣</div></div>
+		<div><img src="img/pig_3.png" /><div class="bless">平平安安</div></div>
+		<div><img src="img/pig_4.png" /><div class="bless">自由自在</div></div>
+		<div><img src="img/pig_5.png" /><div class="bless">开开心心</div></div>
+		<div><img src="img/pig_6.png" /><div class="bless">无忧无虑</div></div>
+		<div><img src="img/pig_7.png" /><div class="bless">漂漂亮亮</div></div>
+		<div><img src="img/pig_8.png" /><div class="bless">美妙守护</div></div>
+		<div><img src="img/pig_9.png" /><div class="bless">健健康康</div></div>
+		<div><img src="img/pig_10.png" /><div class="bless">幸运之神</div></div>
+		<div style="clear: both;"></div>
+	</div>
+</body>
+</html>

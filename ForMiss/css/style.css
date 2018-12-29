@@ -1,0 +1,142 @@
+/*通用样式*/
+*{margin:0;padding:0;}
+body{font-size: 14px;background:url("../img/1_1.jpg") #6f0b02;font-weight: 600;}
+img{border:0;}
+
+.box{width:310px;margin:auto;perspective:800px;/*景深*/}
+.box .pic{position:relative;transform-style:preserve-3d;/*3d环境*/ animation:play 10s linear infinite;/*动画名称 执行时间 匀速 无限执行*/}
+.box ul li{list-style:none;position:absolute;top:0;left:0;}
+/*start box*/
+/*定义一个关键帧*/
+@keyframes play{from{transform:rotateY(0deg);}to{transform:rotateY(360deg);}}
+/*start text*/
+#text{width:500px;height:200px;color:#6fade1;margin:auto;font-size:24px;font-family:"方正喵呜体";}
+/*end text*/
+
+.fl{float: left;}
+.fr{float: right;}
+.center{width: 1000px;margin: 0 auto 0 auto;}
+/*content*/
+.content{position: relative;width: 900px;height: 380px;margin: 80px auto 20px auto;background-color: ;z-index: -1;}
+.l-pic-index{/*display:none;*/position: absolute;left: 400px;top: 1px;z-index:2;width:50px;height:460px;background: url("../img/j1_1.png") no-repeat right 0;}
+.r-pic-index{/*display:none;*/position: absolute;right: 400px;top: 0;z-index: 2; width:50px;*width:82px;height:460px; background: url("../img/j4_1.png") no-repeat left 0;}
+.l-bg-index{position: absolute;top: -3px;left: 430px;z-index: 1;width: 25px;height: 459px;background: url("../img/j2_3.png") right 0 no-repeat;}
+.r-bg-index{position: absolute;top:-4px;right: 430px;z-index: 1;width: 25px;height: 459px;background: url("../img/j3_3.png") 0 0 no-repeat;}
+.main-index{display: none;overflow: hidden;zoom:1;position: absolute;z-index: 5;width:530px;height:280px;left:50px;top:90px;color: #2e2e2e;}
+.intro-text{margin: 5px 0 0 25px;line-height: 25px;text-indent: 30px;color: white;width: 420px;}
+.intro-text font:hover{color: red;}
+
+.music{margin: 0 39%;width: 22%;opacity: 0;position: absolute;background-color: ;}
+.pig{width: 1000px;height: auto;position: relative;bottom: 0;margin: 0 auto;z-index: 999;display: none;}
+.pig div{width: 100px;height: auto;float: left;position: relative;}
+.pig div img{width: inherit;height: inherit;opacity: ;cursor: pointer;transition: all linear 0.1s;}
+.pig div img:hover{ animation: myfirst linear 1s infinite alternate;}
+@keyframes myfirst{from {transform: rotate(0deg);}50%{ transform: rotate(20deg);}100% {transform: rotate(-20deg);}}
+.bless{position: absolute;left:-50px;background-color: white;top:-120px;padding: 8px 0;border-radius: 5px;width: auto;font-size: 12px;text-align: center;display: none;}
+.bless:before{position: absolute;width: 0;height: 0;content: "";border-bottom: 8px solid transparent;border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid white;bottom: -13px;right: 0;}
+.pig>div:hover .bless{display: block;}
+
+/*按钮*/
+.boxbut{ 
+width: 550px;text-align: center;line-height: 46px;margin:0 auto;position: relative;z-index: 9999;}
+.btn{position: relative;font-weight:bold;width: 124px;height: 44px;border-radius: 3px;border: 1px solid #c0c0c0;margin:0 50px 40px 0;}
+.btn:nth-child(3n){margin-right: 0;}
+.btn:nth-child(3){color: #923e3e;border-color: #b74545;box-shadow:inset 0 1px 0 #fe8585,0 1px 0 rgba(0,0,0,.2);background:-webkit-linear-gradient(top,#fd5c5c,#fd4a4a);background:-moz-linear-gradient(top,#fd5c5c,#fd4a4a);background:-ms-linear-gradient(top,#fd5c5c,#fd4a4a);background:-o-linear-gradient(top,#fd5c5c,#fd4a4a);background:linear-gradient(top,#fd5c5c,#fd4a4a);}
+.btn:nth-child(3):hover{background:-webkit-linear-gradient(top,#fd8d8d,#ff6161);background:-moz-linear-gradient(top,#fd8d8d,#ff6161);background:-o-linear-gradient(top,#fd8d8d,#ff6161);background:-ms-linear-gradient(top,#fd8d8d,#ff6161);background:linear-gradient(top,#fd8d8d,#ff6161);}
+.btn:nth-child(3):active{top:4px;box-shadow:inset 0 1px 3px #a31818;background:-webkit-linear-gradient(top,#d43535,#d43535);background:-moz-linear-gradient(top,#d43535,#d43535);background:-ms-linear-gradient(top,#d43535,#d43535);background:-o-linear-gradient(top,#d43535,#d43535);background:linear-gradient(top,#d43535,#d43535);}
+.btn:nth-child(1){color: #923e3e;border-color: #b74545;box-shadow:inset 0 1px 0 #fe8585,0 1px 0 rgba(0,0,0,.2);background:-webkit-linear-gradient(top,#fd5c5c,#fd4a4a);background:-moz-linear-gradient(top,#fd5c5c,#fd4a4a);background:-ms-linear-gradient(top,#fd5c5c,#fd4a4a);background:-o-linear-gradient(top,#fd5c5c,#fd4a4a);background:linear-gradient(top,#fd5c5c,#fd4a4a);}
+.btn:nth-child(1):hover{background:-webkit-linear-gradient(top,#fd8d8d,#ff6161);background:-moz-linear-gradient(top,#fd8d8d,#ff6161);background:-o-linear-gradient(top,#fd8d8d,#ff6161);background:-ms-linear-gradient(top,#fd8d8d,#ff6161);background:linear-gradient(top,#fd8d8d,#ff6161);}
+.btn:nth-child(1):active{top:4px;box-shadow:inset 0 1px 3px #a31818;background:-webkit-linear-gradient(top,#d43535,#d43535);background:-moz-linear-gradient(top,#d43535,#d43535);background:-ms-linear-gradient(top,#d43535,#d43535);background:-o-linear-gradient(top,#d43535,#d43535);background:linear-gradient(top,#d43535,#d43535);}
+.btn:nth-child(2){ color: #3295a4; border-color: white; box-shadow:inset 0 1px 0 white,0 1px 0 rgba(0,0,0,.2);background:-webkit-linear-gradient(top,white,white);background:-moz-linear-gradient(top,white,white);background:-o-linear-gradient(top,white,white);background:-ms-linear-gradient(top,white,white);background:linear-gradient(top,white,white);}
+.btn:nth-child(2):active{top:4px;box-shadow:inset 0 1px 3px #1d8194;background:-webkit-linear-gradient(top,#2bbed9,#2bbed9);background:-moz-linear-gradient(top,#2bbed9,#2bbed9);background:-o-linear-gradient(top,#2bbed9,#2bbed9);background:-ms-linear-gradient(top,#2bbed9,#2bbed9);background:linear-gradient(top,#2bbed9,#2bbed9); }
+.btn:before,.btn:after{position: absolute;content: "";height: 50%;border-radius: 50%;z-index: -1;}
+.btn:before {width: 90%;left: 5%;top:12%;box-shadow: 0 -7px 4px rgba(0,0,0,0.3);}
+.btn:active:before {width: 90%;left: 5%;top:12%;box-shadow: 0 0 2px rgba(0,0,0,0.3);}
+.btn:after {width: 80%;left: 10%;bottom: 9%;box-shadow: 0 7px 4px rgba(0,0,0,0.4);}
+.btn:active:after {width: 80%;left: 10%;bottom: 9%;box-shadow: 0 0 0 rgba(0,0,0,0.4);}
+.boxbut p:last-child{font-size: 20px;font-weight: bold;}
+.boxbut p:last-child span{color: #fff;}
+
+/*跳动文字*/
+.fa-codepen{-webkit-animation: fade 3s infinite alternate;-moz-animation: fade 3s infinite alternate;-o-animation: fade 3s infinite alternate;animation: fade 3s infinite alternate;}
+span {font-size: 1em;font-family: "Quicksand", sans-serif;color: white;transition: .25s;}
+#span{display: block;width: 400px;margin-left: 30px;line-height: 25px;}
+/*Animation*/
+@-moz-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes fade {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+
+/*星星*/
+#starsBox {position: fixed;top: 0;left: 0;right: 0;bottom: 0;}
+#starsBox span {display: inline-block;width: auto;position: absolute;border-radius: 100%;transition: 100s linear;}
+p > span {display: block;font-size: 12px;color: #bdc3c7;margin-top: 30px;font-weight: 100;text-shadow: 0 0 50px black;letter-spacing: 3px;}
+p > span > a {font-weight: 700;text-decoration: none;color: #d64541;padding-bottom: 2px;border-bottom: 0px solid #d64541;transition: 0.5s;}
+p > span > a:hover {padding-bottom: 5px;border-bottom: 2px solid #d64541;}
+.soda {position: fixed;z-index: 9;top: 0;right: 0;bottom: 0;left: 0;perspective: 50vw;transform: translateZ(-99999px);transform-style: preserve-3d;}
+.bubble {position: absolute;width: 50px;height: 50px;border-radius: 50%;background-image: radial-gradient(rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 1) 80%);transform: translateX(-50%);will-change: top, left;}
+.bubble::after {content: '';position: absolute;top: 20%;right: 25%;width: 33%;height: 33%;border: 3px solid;border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;border-radius: 50%;transform: rotate(45deg);}
