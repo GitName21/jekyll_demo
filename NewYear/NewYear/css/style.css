@@ -1,0 +1,29 @@
+/*通用样式*/
+*{margin:0;padding:0;}
+body{font-size: 14px;background: #6f0b02;font-weight: 600;}
+img{border:0;}
+
+.fl{float: left;}
+.fr{float: right;}
+.center{width: 1000px;margin: 0 auto 0 auto;}
+/*content*/
+.content{position: relative;width: 900px;height: 380px;margin: 80px auto 20px auto;background-color: ;}
+.l-pic-index{/*display:none;*/position: absolute;left: 400px;top: 1px;z-index:2;width:50px;height:460px;background: url("../img/j1_1.png") no-repeat right 0;}
+.r-pic-index{/*display:none;*/position: absolute;right: 400px;top: 0;z-index: 2; width:50px;*width:82px;height:460px; background: url("../img/j4_1.png") no-repeat left 0;}
+.l-bg-index{position: absolute;top: -3px;left: 430px;z-index: 1;width: 25px;height: 459px;background: url("../img/j2_3.png") right 0 no-repeat;}
+.r-bg-index{position: absolute;top:-4px;right: 430px;z-index: 1;width: 25px;height: 459px;background: url("../img/j3_3.png") 0 0 no-repeat;}
+.main-index{display: none;overflow: hidden;zoom:1;position: absolute;z-index: 5;width:530px;height:280px;left:50px;top:90px;color: #2e2e2e;}
+.intro-text{margin: 5px 0 0 25px;line-height: 25px;text-indent: 30px;color: white;width: 420px;}
+.intro-text font:hover{color: red;}
+
+.music{margin: 0 39%;width: 22%;opacity: 0;position: absolute;background-color: ;}
+.pig{width: 1000px;height: auto;position: relative;bottom: 0;margin: 0 auto;z-index: 999;display: none;}
+.pig div{width: 100px;height: auto;float: left;position: relative;}
+.pig div img{width: inherit;height: inherit;opacity: ;cursor: pointer;transition: all linear 0.1s;}
+.pig div img:hover{ animation: myfirst linear 1s infinite alternate;}
+@keyframes myfirst{from {transform: rotate(0deg);}50%{ transform: rotate(20deg);}100% {transform: rotate(-20deg);}}
+.bless{position: absolute;left:-50px;background-color: white;top:-120px;padding: 8px 0;border-radius: 5px;width: auto;font-size: 12px;text-align: center;display: none;}
+.bless:before{position: absolute;width: 0;height: 0;content: "";border-bottom: 8px solid transparent;border-left: 8px solid transparent;border-right: 8px solid transparent;border-top: 8px solid white;bottom: -13px;right: 0;}
+.pig>div:hover .bless{display: block;}
+
+
