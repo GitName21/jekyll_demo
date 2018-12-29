@@ -246,11 +246,53 @@ color: #fff;
 </style>
 <script>
 	$(document).ready(function(){
-		var phone = $(window).width(); 
-		if(phone<=860){
-			alert("小猪请用电脑观看！！！");
-			window.location.replace("phone.html");
-		};
+//		var phone = $(window).width(); 
+//		if(phone<=860){
+//			alert("小猪请用电脑观看！！！");
+//			window.location.replace("phone.html");
+//		}else{
+//			alert("祝师姐节日快乐！！！");
+//		};
+
+$(function(){
+    var u = navigator.userAgent;
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    
+    
+   if(isAndroid==true || isiOS==true){
+   		alert("小猪请用电脑观看！！！");
+		window.location.replace("phone.html");
+   }else{
+   		alert("祝师姐节日快乐！！！");
+   }
+    
+//  if(ua.match(/MicroMessenger/i)=="micromessenger") {   //微信内置浏览器+应用宝链接
+//      $(".download a").bind('touchstart', function (event) {
+//          window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名 '
+//      });
+//  }else{
+//      if(isiOS){
+//          $(".download a").bind('touchstart', function (event) {
+//              window.location.href='https://itunes.apple.com/cn/app/应用名'
+//               
+//          });
+//      }else if(isAndroid){
+//          $(".download a").bind('touchstart', function (event) {
+//              window.location.href='http://a.app.qq.com/o/simple.jsp?pkgname=应用名'
+//               
+//          });
+//      }else{  //PC 端
+//          $(".download a").click(function(){
+//          	alert("");
+//              window.location.href='应用链接'
+//          });
+//      }
+//   
+//  }
+     
+});
 	});
 </script>
 </head>
