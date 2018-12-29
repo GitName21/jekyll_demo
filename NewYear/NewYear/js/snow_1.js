@@ -25,14 +25,4 @@
 			clearTimeout(id);
 		};
 	};
-	
-		 $(document).ready(function(){
-				//卷轴展开动画效果
-				$(".l-pic-index").animate({'left':'0','top':'-4px'},8300);
-				$(".r-pic-index").animate({'right':'-0','top':'-5px'},8450);
-				$(".l-bg-index").animate({'width':'470px','left':'-23px'},9500);
-				$(".r-bg-index").animate({'width':'470px','right':'-15px'},9300,function(){
-					$(".main-index").fadeIn(800);
-				});
-			});	
 });
