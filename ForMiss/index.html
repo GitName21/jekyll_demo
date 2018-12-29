@@ -11,8 +11,8 @@
 			var month=myDate.getMonth()+1;
 			var date=myDate.getDate();
 			if(year!=2019  && month!=01 || year!=2019  && month!=1){
-				window.close();
 				alert("哈哈哈！！！元旦才可以看哟！！！");
+				window.location.replace("404.html");
 			}else{
 				$(function(){
 				    var u = navigator.userAgent;
