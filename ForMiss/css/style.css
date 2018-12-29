@@ -1,6 +1,6 @@
-/*通用样式*/
+﻿/*通用样式*/
 *{margin:0;padding:0;}
-body{font-size: 14px;background:url("../img/1_1.jpg") #6f0b02;font-weight: 600;}
+body{font-size: 14px;background:#991B05;font-weight: 600;}
 img{border:0;}
 
 .box{width:310px;margin:auto;perspective:800px;/*景深*/}
