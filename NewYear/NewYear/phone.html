@@ -22,10 +22,10 @@ $(function(){
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
     
     
-   if(isAndroid==false || isiOS==false){
-		alert("不是手机");
+   if(isAndroid==true || isiOS==true){
+		alert("祝师姐节日快乐！！！");
    }else{
-   		alert("祝师姐节日快乐！！！");
+   		window.location.replace("index.html");
    }
     
 //  if(ua.match(/MicroMessenger/i)=="micromessenger") {   //微信内置浏览器+应用宝链接
