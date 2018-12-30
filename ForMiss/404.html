@@ -7,11 +7,15 @@
 		<style>
 			*{margin: 0;padding: 0;}
 			body{background: #991B05;}
-			.tips{width:100%;height: auto;font-size: 2em;color: white;text-align: center;line-height: 100px;margin: 0 auto;}
+			.tips{width:250px;height: auto;font-size: 1em;color: black;text-align: left;line-height: 25px;margin: 0 auto;position: absolute;background: white;border-radius: 5px;left: -300px;top: -80px;padding: 15px;}
+			.tips:before{position: absolute;width: 0;height: 0;content: "";border-bottom: 15px solid transparent;border-left: 15px solid transparent;border-right: 15px solid transparent;border-top: 15px solid white;bottom: -26px;right: 0;}
+			.tips{ animation: myfirst linear 4s infinite alternate;}
+@keyframes myfirst{from {transform: translateY(0px);}50%{ transform: translateY(-50px);}100% {transform: translateY(30px);}}
 		</style>
 	</head>
 	<body>
 		<div class="ghost">
+			<div class="tips">师姐，元旦记得打开哦！！！哈哈哈！！！</div>
 		   <div class="body">
 		      <div class="face">
 		         <div class="eye left"></div>
@@ -32,6 +36,5 @@
 		   </div>
 		   <div class="shadow"></div>
 		</div>		
-		<div class="tips">师姐，元旦记得打开哦！！！哈哈哈！！！</div>
 	</body>
 </html>
